@@ -12,7 +12,7 @@
     color: var(--darkGreen);
     display: block;
     width: auto; /* Allow button width to adjust based on content */
-    text-align: center;
+    text-align: center; /* Center align button text */
     text-transform: uppercase;
     font-size: 15px;
     padding: 12px;
@@ -46,7 +46,6 @@ header {
     justify-content: space-between;
     min-height: 400px;
     padding: 20px 50px 60px;
-    border-radius: 16px;
 }
 
 header .category,
@@ -58,7 +57,7 @@ header .info .subtitle,
 article h4,
 article p,
 blockquote {
-    text-align: center; /* Center align all text */
+    text-align: center; /* Center align all text in header */
 }
 
 header .info .tags i {
@@ -155,8 +154,9 @@ article blockquote {
 
    .btn {
        padding :10px; /* Adjust padding for smaller screens */
-       margin-left:auto ; /* Align button to left */
+       margin-left:auto ; /* Align button to left from this point onward */
        margin-right:auto ; /* Center button on smaller screens */
-       text-align:left ; /* Align button text to left */
+       text-align:left ; /* Align button text to left from this point onward */
+       display:block ; /* Ensure button takes full width available */
    }
 }
