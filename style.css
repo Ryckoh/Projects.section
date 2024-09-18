@@ -12,12 +12,13 @@
     color: var(--darkGreen);
     display: block;
     width: auto; /* Allow button width to adjust based on content */
-    text-align: center; /* Center align button text */
+    text-align: center;
     text-transform: uppercase;
     font-size: 15px;
     padding: 12px;
     border-radius: 25px;
-    margin: 15px 0; /* Align buttons vertically */
+    margin: 15px 0;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -46,23 +47,39 @@ header {
     justify-content: space-between;
     min-height: 400px;
     padding: 20px 50px 60px;
+    border-radius: 16px;
 }
 
-header .category,
-header .info .tags span,
-header .info .title,
-header .info .subtitle,
-.details .item .item-title,
-.details .item .item-text,
-article h4,
-article p,
-blockquote {
-    text-align: center; /* Center align all text in header */
+header .category {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+header .info {
+    text-align: center;
 }
 
 header .info .tags i {
     font-size: 18px;
     margin-right: 4px;
+}
+
+header .info .tags span {
+    font-size: 0.8rem;
+}
+
+header .info .title {
+    margin: 20px 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header .info .subtitle {
+    min-width: 70%;
+    margin: 0 auto 20px;
+    font-size: 1rem;
 }
 
 .details {
@@ -71,11 +88,7 @@ header .info .tags i {
     background: rgba(0, 0, 0, 0.14);
     margin-top: 50px;
     padding: 20px 50px; /* Adjust padding */
-}
-
-.details .item {
-   flex-basis :30%; /* Adjust item width for better layout */
-   text-align :center; /* Center align item text */
+    border-radius: 16px;
 }
 
 .details .item .item-title {
@@ -135,13 +148,10 @@ article blockquote {
    .details {
        flex-direction :column; 
        padding :20px; /* Adjust padding for smaller screens */
-       align-items:center; /* Center align items in column layout */
    }
 
    .details .item:not(:last-child) {
        margin-bottom :30px; 
-       width:auto ; /* Allow item width to adjust for better layout */
-       text-align:center ; /* Center align item text */
    }
 
    article h4 {
@@ -154,9 +164,5 @@ article blockquote {
 
    .btn {
        padding :10px; /* Adjust padding for smaller screens */
-       margin-left:auto ; /* Align button to left from this point onward */
-       margin-right:auto ; /* Center button on smaller screens */
-       text-align:left ; /* Align button text to left from this point onward */
-       display:block ; /* Ensure button takes full width available */
    }
 }
