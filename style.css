@@ -17,8 +17,7 @@
     font-size: 15px;
     padding: 12px;
     border-radius: 25px;
-    margin: 15px auto; /* Center button */
-    transition: background-color 0.3s ease;
+    margin: 15px 0; /* Align buttons vertically */
 }
 
 .btn:hover {
@@ -73,7 +72,6 @@ header .info .tags i {
     background: rgba(0, 0, 0, 0.14);
     margin-top: 50px;
     padding: 20px 50px; /* Adjust padding */
-    border-radius: 16px;
 }
 
 .details .item {
@@ -157,6 +155,8 @@ article blockquote {
 
    .btn {
        padding :10px; /* Adjust padding for smaller screens */
-       margin:auto ; /* Center button on smaller screens */
+       margin-left:auto ; /* Align button to left */
+       margin-right:auto ; /* Center button on smaller screens */
+       text-align:left ; /* Align button text to left */
    }
 }
